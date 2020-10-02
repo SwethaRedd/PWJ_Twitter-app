@@ -34,8 +34,10 @@
             type="text"
             placeholder="Search twitter"
             id="user-search-input"
+            onkeyup="onEnter(event)"
           />
-          <i class="fas fa-search fa-rotate-90"></i>
+          <!-- document.getElemenetById("user-search-input").value -->
+          <i class="fas fa-search fa-rotate-90" onclick="getTwitterData()"></i>
           <!-- <i class="fas fa-search fa-flip-horizontal"></i> -->
         </div>
         <div class="tweets-list">
@@ -48,14 +50,12 @@
                 </div>
             </div>
             <div class="tweet-images-container">
-              <div class="tweet-image">Image</div>
+              <div class="tweet-image"></div>
+              <div class="tweet-image"></div>
+              <div class="tweet-image"></div>
+              <div class="tweet-image"></div>
             </div>
-            <div class="tweet-text-container">
-              What is Lorem Ipsum Lorem Ipsum is simply dummy text of the
-              printing and typesetting industry Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s when an
-              unknown printer took a galley of type and scrambled it to make a
-              type specimen book it has?
+            <div class="tweet-text-container">Text
             </div>
             <div class="tweet-date-container">20hrs ago</div>
           </div>
