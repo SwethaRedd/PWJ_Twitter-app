@@ -12,6 +12,7 @@
       src="https://kit.fontawesome.com/c939d0e917.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.0/moment.min.js"></script>
   </head>
   <body>
     <div class="container home-page">
@@ -41,7 +42,11 @@
           <!-- <i class="fas fa-search fa-flip-horizontal"></i> -->
         </div>
         <div class="tweets-list">
-          <div class="tweet-container">
+          <div class="tweets-welcome-message">
+            <h5>Welcome to Twitter!</h5>
+            <p>Use the search above to see what's happening around the World.!! </p>
+          </div>
+          <!-- <div class="tweet-container">
             <div class="tweet-user-info">
                 <div class="tweet-user-profile"></div>
                 <div class="tweet-user-name-container">
@@ -49,6 +54,11 @@
                     <div class="tweet-user-username">@STweets</div>
                 </div>
             </div>
+            <div class="tweet-video-container">
+              <video controls>
+                <source src="https://video.twimg.com/tweet_video/EjW8QB1WkAAbBOC.mp4" type="video/mp4">
+              </video>
+            </div> 
             <div class="tweet-images-container">
               <div class="tweet-image"></div>
               <div class="tweet-image"></div>
@@ -58,19 +68,23 @@
             <div class="tweet-text-container">Text
             </div>
             <div class="tweet-date-container">20hrs ago</div>
-          </div>
+          </div> -->
+        </div>
+        <div class="next-page-container" id="next-page" onclick="onNextPage()">
+          <i class="fas fa-arrow-down"></i>
         </div>
       </div>
       <div class="tweets-sidebar-container">
         <div class="tweets-sidebar">
-            <div class="tweets-trending">
-                <h5>Trends for you</h5>
-                <ul>
-                    <li>#Coding</li>
-                    <li>#JavaScript</li>
-                    <li>#React</li>
-                </ul>
-            </div>
+          <div class="tweets-trending">
+            <h5>Trends for you</h5>
+            <ul>
+              <li onclick="selectTrend(this)">#Coding</li>
+              <li onclick="selectTrend(this)">#JavaScript</li>
+              <li onclick="selectTrend(this)">#React</li>
+              <li onclick="selectTrend(this)">#NodeJs</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
