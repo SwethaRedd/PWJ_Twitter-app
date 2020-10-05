@@ -1,7 +1,8 @@
 // const { response } = require("express");
 
 // const URL = "http://localhost:3000/tweets";
-const URL = "https://api.twitter.com/1.1/search/tweets.json";
+const URL = "https://api.twitter.com/1.1/search/tweets";
+// https://api.twitter.com/1.1/search/
 let nextPageUrl = null;
 
 //on search enter load the tweets data
